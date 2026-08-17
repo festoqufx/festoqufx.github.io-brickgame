@@ -1,0 +1,94 @@
+.outside {
+  position: absolute;
+  top: 68px;
+  bottom: 28px;
+  left: -200px;
+  right: -200px;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.colLeft,
+.colRight {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.hintLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+
+.space,
+.key {
+  background: var(--fg);
+  color: var(--bg);
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.18);
+}
+
+.space {
+  width: 168px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.pad {
+  width: 168px;
+}
+
+.key {
+  width: 52px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+
+  em {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    border-color: transparent transparent var(--bg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -9px 0 0 -6px;
+  }
+}
+
+.up {
+  display: block;
+  margin: 0 auto 4px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .outside {
+    display: none;
+  }
+}

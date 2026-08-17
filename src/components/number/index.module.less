@@ -1,0 +1,55 @@
+.number {
+  height: 24px;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.digit {
+  position: relative;
+  width: 12px;
+  height: 22px;
+  margin-left: 3px;
+
+  i {
+    position: absolute;
+    background: var(--pixel-on-fill);
+    opacity: 0.12;
+    border-radius: 1px;
+  }
+
+  .on {
+    opacity: 1;
+  }
+
+  .s0 { top: 1px; left: 2px; width: 8px; height: 2px; }
+  .s1 { top: 2px; right: 1px; width: 2px; height: 8px; }
+  .s2 { bottom: 3px; right: 1px; width: 2px; height: 8px; }
+  .s3 { bottom: 1px; left: 2px; width: 8px; height: 2px; }
+  .s4 { bottom: 3px; left: 1px; width: 2px; height: 8px; }
+  .s5 { top: 2px; left: 1px; width: 2px; height: 8px; }
+  .s6 { top: 10px; left: 2px; width: 8px; height: 2px; }
+}
+
+.colon {
+  width: 8px;
+  height: 22px;
+  position: relative;
+  margin-left: 2px;
+
+  i {
+    position: absolute;
+    left: 3px;
+    width: 2px;
+    height: 2px;
+    background: var(--pixel-on-fill);
+    opacity: 0.12;
+  }
+
+  i:first-child { top: 6px; }
+  i:last-child { bottom: 6px; }
+
+  &.on i {
+    opacity: 1;
+  }
+}

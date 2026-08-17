@@ -1,0 +1,31 @@
+.logo {
+  width: 224px;
+  height: 200px;
+  position: absolute;
+  top: 308px;
+  left: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mascot {
+  width: 48px;
+  transform-origin: center;
+}
+
+.mascot[data-frame='2'],
+.mascot[data-frame='3'] {
+  transform: translateX(10px);
+}
+
+.mascot[data-frame='4'],
+.mascot[data-frame='5'] {
+  transform: translateX(20px) scaleX(-1);
+}
+
+.mascot[data-frame='6'],
+.mascot[data-frame='7'] {
+  transform: translateX(8px) scaleX(-1);
+}
