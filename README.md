@@ -2,11 +2,12 @@
 
 Classic handheld brick games rebuilt with React function components, Redux Toolkit, and a modern black-and-white interface. Play Tetris, Snake, Tank, Racing, Shooting, and Breakout in the browser.
 
-Inspired by [react-tetris](https://github.com/chvin/react-tetris). This project is fully rewritten with hooks and Redux.
+Inspired by [react-tetris](https://github.com/festoqufx/festoqufx.github.io-brickgame). This project is fully rewritten with hooks and Redux.
 
-Live demo: [https://quekaihua.github.io/brick-game/](https://quekaihua.github.io/brick-game/)
+Live demo: [https://festoqufx-github-io-brickgame.vercel.app/](https://festoqufx-github-io-brickgame.vercel.app/)
 
-中文说明见 [README.zh-CN.md](./README.zh-CN.md).
+
+
 
 ## Features
 
@@ -47,7 +48,7 @@ npm install
 npm start
 ```
 
-The app opens at [http://127.0.0.1:3000/](http://127.0.0.1:3000/).
+
 
 ```bash
 npm run build
